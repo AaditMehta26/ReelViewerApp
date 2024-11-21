@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Video Player -->
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Thumbs Up/Thumbs Down buttons stacked vertically, centered -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|end"
+    android:orientation="vertical"
+    android:layout_gravity="center|end"
+    android:layout_marginTop="16dp">
+
+    <ImageButton
+        android:id="@+id/thumbsUpButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="Thumbs Up"
+        android:src="@drawable/ic_thumb_up" />
+
+    <ImageButton
+        android:id="@+id/thumbsDownButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="Thumbs Down"
+        android:src="@drawable/ic_thumb_down" />
+</LinearLayout>
+
+    </FrameLayout>
